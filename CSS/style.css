@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+body{
+	padding: 0;
+	margin: 0;
+	background-image:url("../Images/4.jpg");
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+.vector{
+	text-align: center;
+	margin-top: 20px;
+}
+.bg{
+	opacity: 0.7;
+}
+.vecbg{
+	overflow: hidden;
+  	position: relative;
+	width: 95%;
+}
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+@media (max-width: 992px) {
+  .vector{
+    margin-top: 50px;	  
+  }
+	.layer{
+		height:160px;
+	}
+}
+.intro{
+	margin-top: 30px;
+}
+.introhead{
+	width: 99%;
+	margin: auto;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+}
+.introtext{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 450;
+	font-size: 18px;
+}
+#btn {	
+  	margin-top: 15px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	background: rgb(35,37,38);
+    background: -moz-linear-gradient(90deg, rgba(35,37,38,1) 0%, rgba(65,67,69,1) 50%, rgba(35,37,38,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(35,37,38,1) 0%, rgba(65,67,69,1) 50%, rgba(35,37,38,1) 100%);
+    background: linear-gradient(90deg, rgba(35,37,38,1) 0%, rgba(65,67,69,1) 50%, rgba(35,37,38,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#232526",endColorstr="#232526",GradientType=1);
+  	height: 50px;
+  	min-width: 150px;
+  	max-width: 400px;
+  	border: 5px solid #000;
+  	border-radius: 25px;
+  	color: #fff;
+  	font-size: 30px;
+  	font-family: 'Rubik', sans-serif;
+  	font-weight:600;
+  	position: relative;
+  	cursor: pointer;
+  	padding-top: 6px;
+  	padding-bottom: 5px;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
+#btn:hover {
+    background: #56AB31;
+	color: #000;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.footer{
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+.footertext{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.social{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.flink{
+	margin-left: 10px;
+	margin-right: 10px;
+}

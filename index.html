@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OnTurf</title>
+    <link rel="shortcut icon" href="Images/Logo.png">
+    <!-- Bootstrap & CSS Links -->
+	<link href="CSS/style.css" rel="stylesheet" type="text/css">
+	<link href="CSS/CSSforNavBar.css" rel="stylesheet" type="text/css">
+	<link href="CSS/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+  	<!-- Navigation Bar -->    
+	<div class="banner">
+   		<nav class="navbar navbar-expand-lg navbar-light">
+  		<a class="navbar-brand" href="#"><img src="Images/Logo.png" alt="" class="logo"><br><img src="Images/Text.png" alt="" class="logo"></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNav">
+    		<ul class="navbar-nav linksall">
+      			<li class="nav-item">
+			        <a class="nav-link link1 l1" href="#">Home</a>
+      			</li>
+      			<li class="nav-item linkleft">
+        			<a class="nav-link l2" href="#">About</a>
+      			</li>
+      			<li class="nav-item linkleft">
+        			<a class="nav-link l3" href="#">Contact</a>
+      			</li>
+    		</ul>
+      		<ul class="navbar-nav ml-auto linksall">
+      			<li class="nav-item linkright">
+        			<a class="nav-link l4" href="#">Book A Turf</a>
+      			</li>
+      			<li class="nav-item linkright">
+        			<a class="nav-link l5" href="#">Sign In</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link l6" href="#">Sign Up</a>
+      			</li>
+    		</ul>
+  		</div>
+		</nav>
+	</div>
+	<!-- Vector Part (Parallax) -->
+	<div class="container-fluid vector">
+		<ul id="scene">
+			<li class="layer" data-depth="0.20"><img class="img-fluid vecbg bg" src="Images/BG1.png" alt=""></li>
+			<li class="layer" data-depth="0.50"><img class="img-fluid vecbg man" src="Images/BG2.png" alt=""></li>
+			<li class="layer" data-depth="0.90"><img class="img-fluid vecbg" src="Images/BG3.png" alt=""></li>
+		</ul>
+	</div>
+	<!-- Text Under Vector (Intro)-->
+	<div class="container-fluid intro">
+		<p class="introhead">Unable to find turfs near you?</p>
+		<p class="introtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non vulputate odio, vel placerat sapien. Nulla id mi nunc. Fusce ornare massa in cursus mattis. Donec ultricies tellus suscipit nisi varius ultrices. Mauris at porta velit. Nam sollicitudin ultricies purus placerat rhoncus. Morbi in nisi condimentum, ornare lectus ut, lobortis lectus. Duis sem libero, condimentum quis feugiat eget, rhoncus vel sapien. Integer quis odio ac velit dignissim fermentum.Curabitur rhoncus a magna vestibulum tempor. Vivamus ullamcorper placerat lacus, nec euismod quam condimentum a. Fusce faucibus viverra velit vitae scelerisque. Donec cursus interdum mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In sagittis vestibulum lectus, sit amet tristique neque porta in. Aenean cursus, neque a pellentesque laoreet, nisl neque sollicitudin nibh, quis venenatis risus diam vitae neque. Aenean mattis est vel leo pulvinar, ultrices malesuada orci tristique. Vestibulum tincidunt ex ac sem lobortis, ut semper enim ultricies. Aliquam erat volutpat. Nam facilisis consequat felis at ornare. <br>
+		<br>
+		</p>
+		<div id="btn"><span class="noselect">Book A Turf</span><div id="circle"></div></div>
+	</div>
+	<!-- Footer -->
+	<div class="container-fluid footer">
+	  <div class="row">
+		  <div class="col-lg-6 footertext">
+			  <u>Privacy &amp; Policy</u>
+			  <div class="break"></div>
+			  <u>Terms &amp; Conditions</u>
+		  </div>
+		  <div class="col-lg-6 social">
+			  <img src="Images/fb.png" alt="" width="50px" class="flink">
+			  <img src="Images/insta.png" alt="" width="50px" class="flink">
+		  </div>
+	  </div>
+    </div>
+	  
+  <!-- Script for Parallax --> 
+	<script src="JS/parallax.min.js"></script>
+	<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	</script>
+	<!-- Scripts --> 
+	<script src="JS/jquery-3.4.1.min.js"></script>
+	<script src="JS/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
