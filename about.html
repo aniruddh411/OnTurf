@@ -9,10 +9,12 @@
     <!-- Bootstrap & CSS Links -->
 	<link href="CSS/about.css" rel="stylesheet" type="text/css">
 	<link href="CSS/CSSforNavBar.css" rel="stylesheet" type="text/css">
+	<link href="CSS/particles.css" rel="stylesheet" type="text/css">
 	<link href="CSS/bootstrap-4.4.1.css" rel="stylesheet">
 	
   </head>
   <body>
+	  <div id="particles-js"></div>
   	  <!-- Navigation Bar -->    
 	  <div class="banner">
    		<nav class="navbar navbar-expand-lg navbar-light">
@@ -54,7 +56,11 @@
 				<p class="abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non vulputate odio, vel placerat sapien. Nulla id mi nunc. Fusce ornare massa in cursus mattis. Donec ultricies tellus suscipit nisi varius ultrices. Mauris at porta velit. Nam sollicitudin ultricies purus placerat rhoncus. Morbi in nisi condimentum, ornare lectus ut, lobortis lectus. Duis sem libero, condimentum quis feugiat eget, rhoncus vel sapien. Integer quis odio ac velit dignissim fermentum.Curabitur rhoncus a magna vestibulum tempor. Vivamus ullamcorper placerat lacus, nec euismod quam condimentum a. Fusce faucibus viverra velit vitae scelerisque. Donec cursus interdum mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In sagittis vestibulum lectus, sit amet tristique neque porta in. Aenean cursus, neque a pellentesque laoreet, nisl neque sollicitudin nibh, quis venenatis risus diam vitae neque.</p>
 			</div>
 		    <div class="col-lg-6 vector">
-				<img src="Images/about.png" alt="" class="img-fluid">
+				<ul id="scene">
+					<li class="layer" data-depth="0.40"><img src="Images/About/1.png" alt="" class="img-fluid a1"></li>
+					<li class="layer" data-depth="0.50"><img src="Images/About/2.png" alt="" class="img-fluid a2"></li>
+					<li class="layer" data-depth="0.60"><img src="Images/About/3.png" alt="" class="img-fluid a3"></li>
+				</ul>
 			</div>
 	    </div>
       </div>
@@ -74,11 +80,17 @@
     </div>
 
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	  
+	<!-- Script for Parallax --> 
+	<script src="JS/parallax.min.js"></script>
+	<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	</script>
+	<!-- Scripts --> 
+	<script src="JS/particles.min.js"></script>
+	<script src="JS/particles.js"></script>
 	<script src="JS/jquery-3.4.1.min.js"></script>
-
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="JS/popper.min.js"></script> 
-  <script src="JS/bootstrap-4.4.1.js"></script>
+    <script src="JS/bootstrap-4.4.1.js"></script>
   </body>
 </html>
