@@ -4,18 +4,17 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OnTurf | About Us</title>
+    <title>OnTurf | Sign Up</title>
     <link rel="shortcut icon" href="Images/Logo.png">
     <!-- Bootstrap & CSS Links -->
-	<link href="CSS/about.css" rel="stylesheet" type="text/css">
+	<link href="CSS/SignUp.css" rel="stylesheet" type="text/css">
 	<link href="CSS/CSSforNavBar.css" rel="stylesheet" type="text/css">
 	<link href="CSS/particles.css" rel="stylesheet" type="text/css">
 	<link href="CSS/bootstrap-4.4.1.css" rel="stylesheet">
-	
   </head>
   <body>
 	  <div id="particles-js"></div>
-  	  <!-- Navigation Bar -->    
+	  <!-- Navigation Bar -->    
 	  <div class="banner">
    		<nav class="navbar navbar-expand-lg navbar-light">
   		<a class="navbar-brand" href="#"><img src="Images/Logo.png" alt="" class="logo"><br><img src="Images/Text.png" alt="" class="logo"></a>
@@ -48,22 +47,33 @@
   		</div>
 		</nav>
 	</div>
-	  <!-- Text and Vector -->
-	  <div class="container-fluid textvect">
-	    <div class="row">
-		    <div class="col-lg-6 text">
-				<p class="heading">Know about us</p>
-				<p class="abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non vulputate odio, vel placerat sapien. Nulla id mi nunc. Fusce ornare massa in cursus mattis. Donec ultricies tellus suscipit nisi varius ultrices. Mauris at porta velit. Nam sollicitudin ultricies purus placerat rhoncus. Morbi in nisi condimentum, ornare lectus ut, lobortis lectus. Duis sem libero, condimentum quis feugiat eget, rhoncus vel sapien. Integer quis odio ac velit dignissim fermentum.Curabitur rhoncus a magna vestibulum tempor. Vivamus ullamcorper placerat lacus, nec euismod quam condimentum a. Fusce faucibus viverra velit vitae scelerisque. Donec cursus interdum mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In sagittis vestibulum lectus, sit amet tristique neque porta in. Aenean cursus, neque a pellentesque laoreet, nisl neque sollicitudin nibh, quis venenatis risus diam vitae neque.</p>
-			</div>
+	  <!-- Vector & Buttons -->
+	  <div class="container-fluid vecbut">
+		  <div class="row">
+			  <div class="col-lg-6 buttons">
+				  <div class="container-fluid user">
+					  <img src="Images/User.png" alt="" class="img-fluid i1">
+					  <break></break>
+					  <button class="btn1">Sign Up as User</button>
+				  </div>
+				  <div class="container-fluid merch">
+					  <img src="Images/HandShake.png" alt="" class="img-fluid i1">
+					  <break></break>
+					  <button class="btn1">Sign Up as Merchant</button>
+				  </div>
+              </div>
 		    <div class="col-lg-6 vector">
-				<ul id="scene">
-					<li class="layer" data-depth="0.20"><img src="Images/About/1.png" alt="" class="img-fluid a1"></li>
-					<li class="layer" data-depth="0.30"><img src="Images/About/2.png" alt="" class="img-fluid a2"></li>
-					<li class="layer" data-depth="0.60"><img src="Images/About/3.png" alt="" class="img-fluid a3"></li>
+				  <ul id="scene">
+					<li class="layer" data-depth="0.20"><img src="Images/SignUPMain/1.png" alt="" class="img-fluid a1"></li>
+					<li class="layer" data-depth="0.30"><img src="Images/SignUPMain/2.png" alt="" class="img-fluid a2"></li>
+					<li class="layer" data-depth="0.60"><img src="Images/SignUPMain/3.png" alt="" class="img-fluid a3"></li>
+					<li class="layer" data-depth="0.40"><img src="Images/SignUPMain/5.png" alt="" class="img-fluid a3"></li>
+				    <li class="layer" data-depth="0.70"><img src="Images/SignUPMain/4.png" alt="" class="img-fluid a3"></li>
+					<li class="layer" data-depth="0.80"><img src="Images/SignUPMain/6.png" alt="" class="img-fluid a3"></li>
 				</ul>
-			</div>
-	    </div>
-      </div>
+		    </div>
+		  </div>
+	  </div>	  
 	  <!-- Footer -->
    	  <div class="container-fluid footer">
 	  <div class="row">
@@ -78,15 +88,15 @@
 		  </div>
 	  </div>
     </div>
+  	
 
 
-	  
-	<!-- Script for Parallax --> 
+	<!-- scripts for parallax -->
 	<script src="JS/parallax.min.js"></script>
 	<script>
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
-	</script>
+	</script>  
 	<!-- Scripts --> 
 	<script src="JS/particles.min.js"></script>
 	<script src="JS/particles.js"></script>
