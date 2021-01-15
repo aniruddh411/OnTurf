@@ -51,15 +51,53 @@
 	  <div class="container-fluid vecbut">
 		  <div class="row">
 			  <div class="col-lg-6 buttons">
-				  <div class="container-fluid user">
-					  <img src="Images/User.png" alt="" class="img-fluid i1">
-					  <break></break>
-					  <button class="btn1">Sign Up as User</button>
-				  </div>
+				  <div class="container-fluid user contact-form">
+					  <form method="post">
+							<div class="row">
+			                    <div class="col-md-6">
+            			            <div class="form-group">
+										<p class="textform"><span class="headuser">Create Account as User</span><br>Fill your details below to sign up and start booking turfs around you.</p>
+										<label class="labels">Full Name<font color="#FF0004">*</font></label>
+                        			    <input type="text" name="txtName" class="form-control" placeholder="Full Name" value="" />
+                        			</div>
+                        			<div class="form-group">
+										<label class="labels">Email<font color="#FF0004">*</font></label>
+                            			<input type="email" name="txtEmail" class="form-control" placeholder="Email" value="" />
+                        			</div>
+                        			<div class="form-group">
+										<label class="labels">Password<font color="#FF0004">*</font></label>
+                            			<input type="password" name="txtPhone" class="form-control" placeholder="Password" value="" />
+                        			</div>
+									<div class="form-group">
+										<label class="labels">Confirm Password<font color="#FF0004">*</font></label>
+                            			<input type="password" name="txtPhone" class="form-control" placeholder=" Confirm Password" value="" />
+                        			</div>
+                        			<div class="form-group">
+										<label class="labels">Mobile Number<font color="#FF0004">*</font></label>
+										<div class="sameline">
+                            			<input type="number" name="txtPhone" class="form-control phone" placeholder="Mobile Number" value="" />
+										<input type="submit" name="btnSubmit" class="btnContact genotp" value="Generate OTP" />
+                        			</div></div>
+									<div class="form-group">
+										<label class="labels">Enter OTP<font color="#FF0004">*</font></label>
+										<div class="sameline">
+                            			<input type="number" name="txtPhone" class="form-control phone" placeholder="Enter OTP" value="" />
+										<input type="submit" name="btnSubmit" class="btnContact valotp" value="Validate OTP" />
+										</div></div>
+									<div class="form-group check">
+										<input type="checkbox" name="agree" class="agree" value=""/>
+										<label class="textagree">I agree to your Terms &amp; Conditions, Privacy Policy and Refund Policy.</label>
+									</div>
+									<div class="form-group userbtn">
+                            			<input type="submit" name="btnSubmit" class="btn1" value="Sign Up as User" />
+                        			</div>
+                    			</div>
+                			</div>
+            			</form>
+				</div>
 				  <div class="container-fluid merch">
 					  <img src="Images/HandShake.png" alt="" class="img-fluid i1">
-					  <break></break>
-					  <button class="btn1">Sign Up as Merchant</button>
+					  <button class="btn1 btn2">Sign Up as Merchant</button>
 				  </div>
               </div>
 		    <div class="col-lg-6 vector">
