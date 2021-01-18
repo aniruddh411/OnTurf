@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OnTurf | Sign In</title>
+    <link rel="shortcut icon" href="Images/Logo.png">
+    <!-- Bootstrap & CSS Links -->
+	<link href="CSS/SignIn.css" rel="stylesheet" type="text/css">
+	<link href="CSS/CSSforNavBar.css" rel="stylesheet" type="text/css">
+	<link href="CSS/particles.css" rel="stylesheet" type="text/css">
+	<link href="CSS/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+	  <div id="particles-js"></div>
+	  <!-- Navigation Bar -->    
+	  <div class="banner">
+   		<nav class="navbar navbar-expand-lg navbar-light">
+  		<a class="navbar-brand" href="#"><img src="Images/Logo.png" alt="" class="logo"><br><img src="Images/Text.png" alt="" class="logo"></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarNav">
+    		<ul class="navbar-nav linksall">
+      			<li class="nav-item">
+			        <a class="nav-link link1 l1" href="index.html">Home</a>
+      			</li>
+      			<li class="nav-item linkleft">
+        			<a class="nav-link l2" href="about.html">About</a>
+      			</li>
+      			<li class="nav-item linkleft">
+        			<a class="nav-link l3" href="contact.html">Contact</a>
+      			</li>
+    		</ul>
+      		<ul class="navbar-nav ml-auto linksall">
+      			<li class="nav-item linkright">
+        			<a class="nav-link l4" href="#">Book A Turf</a>
+      			</li>
+      			<li class="nav-item linkright">
+        			<a class="nav-link l5" href="#">Sign In</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link l6" href="signup.html">Sign Up</a>
+      			</li>
+    		</ul>
+  		</div>
+		</nav>
+	</div>
+	  <!-- Vector & Buttons -->
+	  <div class="container-fluid vecbut">
+		  <div class="row">
+			  <div class="col-lg-6 signin">
+				  <div class="container-fluid contact-form">
+					  <form method="post">
+						  <p class="heading">Sign in</p>
+				  <p class="htext">or <a href="signup.html">create an account</a></p>
+                        			<div class="form-group">
+										<label class="labels">Email</label>
+                            			<input type="email" name="txtEmail" class="form-control" placeholder="Email" value="" />
+                        			</div>
+                        			<div class="form-group">
+										<label class="labels">Password</label>
+                            			<input type="password" name="txtPhone" class="form-control" placeholder="Password" value="" />
+                        			</div>
+						  <div class="form-group check">
+										<input type="checkbox" name="agree" class="agree" value=""/>
+										<label class="textagree">Keep me signed in</label>
+							  <div class="break"></div>
+							  <p><a href="">Forgot your password?</a></p>
+									</div>
+						  <div class="form-group userbtn">
+                            			<input type="submit" name="btnSubmit" class="btn1" value="Sign in" />
+                        			</div>
+					  </form>
+				  </div>
+              </div>
+		    <div class="col-lg-6 vector">
+				  <ul id="scene">
+					<li class="layer" data-depth="0.30"><img src="Images/SignIn/1.png" alt="" class="img-fluid a1"></li>
+					<li class="layer" data-depth="0.40"><img src="Images/SignIn/2.png" alt="" class="img-fluid a2"></li>
+					<li class="layer" data-depth="0.65"><img src="Images/SignIn/3.png" alt="" class="img-fluid a3"></li>
+					<li class="layer" data-depth="0.75"><img src="Images/SignIn/4.png" alt="" class="img-fluid a3"></li>
+				</ul>
+		    </div>
+		  </div>
+	  </div>	
+	  <!-- Footer -->
+   	  <div class="container-fluid footer">
+	  <div class="row">
+		  <div class="col-lg-6 footertext">
+			  <u>Privacy &amp; Policy</u>
+			  <div class="break"></div>
+			  <u>Terms &amp; Conditions</u>
+		  </div>
+		  <div class="col-lg-6 social">
+			  <img src="Images/fb.png" alt="" width="50px" class="flink">
+			  <img src="Images/insta.png" alt="" width="50px" class="flink">
+		  </div>
+	  </div>
+    </div>
+  	
+  	
+
+
+	<!-- Scripts for parallax -->
+	<script src="JS/parallax.min.js"></script>
+	<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	</script>  
+	<!-- Scripts --> 
+	<script src="JS/particles.min.js"></script>
+	<script src="JS/particles.js"></script>
+	<script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="JS/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

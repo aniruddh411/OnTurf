@@ -97,7 +97,49 @@
 				</div>
 				  <div class="container-fluid merch">
 					  <img src="Images/HandShake.png" alt="" class="img-fluid i1">
-					  <button class="btn1 btn2">Sign Up as Merchant</button>
+					  <button class="btn1 btn2" data-toggle="modal" data-target="#exampleModalLong">Sign Up as Merchant</button>
+					  <!-- Modal -->
+						<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog">
+  							<div class="modal-dialog modal-dialog-centered" role="document">
+    							<div class="modal-content">
+      							<div class="modal-header">
+        							<h5 class="modal-title" id="exampleModalLongTitle">Sign Up as Merchant</h5>
+        							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          							<span aria-hidden="true">&times;</span>
+        							</button>
+      							</div>
+      							<div class="modal-body modal-form">
+        							<form method="post">
+								<p class="modalhead">Fill your details below to sign up. Our team will contact you on the basis of these details.</p>
+            			            <div class="modalform-group">
+										<label class="modallabels">Full Name<font color="#FF0004">*</font></label>
+										<div class="break"></div>
+                        			    <input type="text" name="txtName" class="modal-control" value="" />
+                        			</div>
+                        			<div class="modalform-group">
+										<label class="modallabels">Email<font color="#FF0004">*</font></label>
+										<div class="break"></div>
+                            			<input type="email" name="txtEmail" class="modal-control" value="" />
+                        			</div>
+                        			<div class="modalform-group">
+										<label class="modallabels">Mobile Number<font color="#FF0004">*</font></label>
+										<div class="break"></div>
+                            			<input type="number" name="txtPhone" class="modal-control" value="" />
+                        			</div>
+									<div class="modalform-group">
+										<label class="modallabels">Address of Turf<font color="#FF0004">*</font></label>
+										<div class="break"></div>
+                            			<input type="text" name="txtPhone" class="modal-control" value="" />
+                        			</div>
+									<div class="modalform-group modalbtns">
+										<button type="button" class="btn1 closebtn" data-dismiss="modal">Close</button>
+                            			<input type="submit" name="btnSubmit" class="btn1" value="Send Details" />
+                        			</div>
+            			</form>
+      							</div>
+    							</div>
+  							</div>
+							</div>
 				  </div>
               </div>
 		    <div class="col-lg-6 vector">
@@ -129,7 +171,7 @@
   	
 
 
-	<!-- scripts for parallax -->
+	<!-- Scripts for parallax -->
 	<script src="JS/parallax.min.js"></script>
 	<script>
 	var scene = document.getElementById('scene');
